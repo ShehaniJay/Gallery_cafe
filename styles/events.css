@@ -1,0 +1,132 @@
+.event {
+    margin-bottom: 2rem;
+    min-width: 250px;
+    max-width: 30%;
+    padding: 12px;
+    background-color: #f2f5b696;
+    border: 1px solid #f2f5b6;
+    border-radius: 10px;
+    box-shadow: 0 16px 4px rgb(16 15 15 / 10%);
+    text-align: center;
+    padding-top: 0px;
+
+}
+.container h2{
+    font-weight: bold;
+    font-size: larger;
+}
+.event h3 {
+    background-color:#6b3e12;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.events {
+    flex: 1;
+    min-width: 250px;
+    padding: 33px;
+    background-color: rgb(183 159 106);
+    border: 2px solid #f2f5b6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.event:hover{
+transform: translateY(-5px);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+                inset -2px -2px 10px rgba(255, 255, 255, 0.9),
+                0 10px 20px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.event img {
+    max-width: 100%;
+    height: auto; 
+    max-height: 200px; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+
+.event_name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.date_time {
+    font-size: 0.9em;
+    color: #000000;
+}
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.notification {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Icon styles */
+.notification-icon {
+    position: relative;
+}
+.notification-icon .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container_event {
+    display: flex;
+    justify-content: space-between;
+}

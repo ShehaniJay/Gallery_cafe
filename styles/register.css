@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+background-image: url("../image/log.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.headingTitle{
+    margin-top: 6rem;
+}
+
+#registerForm{
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #cccccc7d;
+    box-shadow: 0 4px 8px #6b3e12ad;
+    margin: 0 auto;
+}
+
+
+.auth h3{
+    background-color: #6b3e12;;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+
+.auth label,select{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.auth input{
+    width: auto;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 14px;
+}
+
+#role{
+    width: auto;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 14px;
+}
+
+.head-title{
+    text-align: center;
+}
+.auth button {
+    background-color: #6b3e12;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 21px;
+    font-size: 16px;
+}
+
+.auth button:hover {
+    background-color: #a56321;
+}
+.text1{
+    color: white;
+    text-align: center;
+}
+
+#login {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #6b3e12;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#login:hover{
+    background-color: #a56321;
+}

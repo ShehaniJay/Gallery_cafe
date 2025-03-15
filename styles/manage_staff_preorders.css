@@ -1,0 +1,119 @@
+.staff_manage-preorders {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+#manage-preorders {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td img.product-image {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: #102b00;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+    background-color: green;
+}
+
+button[name="confirm"] {
+    background-color: #4CAF50;
+}
+
+button[name="confirm"]:hover {
+    background-color: #45a049;
+}
+
+button[name="delete"] {
+    background-color: #f44336;
+}
+
+button[name="delete"]:hover {
+    background-color: #d32f2f;
+}
+
+button[name="edit"] {
+    background-color: #2196F3;
+}
+
+button[name="edit"]:hover {
+    background-color: #1976d2;
+}
+
+
+a.delete-link {
+    color: #f44336;
+    text-decoration: none;
+}
+
+a.delete-link:hover {
+    text-decoration: underline;
+}
+
+.actions button {
+    padding: 6px 10px;
+}
+
+.actions .edit-button {
+    background-color: #2196F3;
+}
+
+.actions .edit-button:hover {
+    background-color: #1976d2;
+}
+
+.actions .save-button {
+    background-color: #4CAF50;
+}
+
+.actions .save-button:hover {
+    background-color: #45a049;
+}
+
+.actions .cancel-button {
+    background-color: #f44336;
+}
+
+.actions .cancel-button:hover {
+    background-color: #d32f2f;
+}

@@ -1,0 +1,151 @@
+.reservations {
+    padding: 2rem 0;
+    background-color: rgb(183 159 106);;
+}
+
+.reservations h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.reservation-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0rem;
+    padding: 29px;
+    height: 230px;
+    width: fit-content;
+}
+
+.reservation-image {
+    width: 30%;
+    height: auto;
+    margin: 0 1rem;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.reservations form {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 2px solid #f2f5b6;
+    border-radius: 20px;
+    background-color: #f2f5b696;
+}
+
+.reservations label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.reservations input[type="text"],
+.reservations input[type="date"],
+.reservations input[type="time"],
+.reservations input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #6b3e12;
+    border-radius: 14px;
+}
+
+.reservations button {
+    display: block;
+    width: 95%;
+    padding: 1rem;
+    background-color:  #6b3e12;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 21px;
+    font-size: 16px;
+}
+
+.reservations button:hover {
+    background-color: peru;
+    color: palegoldenrod;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+body{
+    
+    background-color: #e2a467c2;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.notification {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.notification p {
+    margin: 0;
+}
+.notification {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.notification-icon {
+    position: relative;
+}
+.notification-icon .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}

@@ -1,0 +1,205 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    color: black;
+}
+
+#preorder {
+    padding: 25px 0 25px 0;
+    background-color: hwb(42.66deg 40.76% 25.98%);;
+}
+
+#preorder h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.sub-menu {
+    box-shadow: 2px 2px 2px #5c4126;
+    border: 1px solid #a1774f;
+    background-color: hwb(42.66deg 40.76% 25.98%);
+    margin: 10px;
+    padding: 10px;
+}
+
+.sub-menu h2 {
+    background-color: #6b3e12;
+    color: white;
+    text-align: center;
+}
+
+#image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-left: 42px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.box label {
+    display: flex;
+    align-items: center;
+}
+
+
+.preorder button {
+    color: white;
+    background:#6b3e12;
+    height: 42px;
+    width: auto;
+    border-radius: 19px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 20px; 
+    font-size: 16px; 
+
+}
+.preorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+.linkmenu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.linkmenu a {
+    text-decoration: none;
+    color: white;
+    background-color: #6b3e12;
+    padding: 10px 20px;
+    border-radius: 14px;
+}
+
+.linkmenu a:hover {
+    background-color: peru;
+}
+
+.box {
+    background-color: #fdfdfd78;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+                inset -2px -2px 10px rgba(255, 255, 255, 0.9),
+                0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.notification {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.notification p {
+    margin: 0;
+}
+.notification {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.notification-icon {
+    position: relative;
+}
+.notification-icon .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}

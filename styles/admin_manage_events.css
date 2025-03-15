@@ -1,0 +1,138 @@
+.main-content {
+    margin-left: 250px;
+    padding: 50px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin: 10px 0 5px;
+}
+
+.form-input, .form-textarea, .form-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #4cae4c;
+}
+
+.view-products-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.view-products-link:hover {
+    background-color: #286090;
+}
+
+
+.manage-events-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.manage-events-table th, .manage-events-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.manage-events-table th {
+    background-color: #f2f2f2;
+}
+
+.manage-events-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.manage-events-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons a, .action-buttons form {
+    display: inline-block;
+}
+
+.action-buttons a, .action-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #5bc0de;
+}
+
+.edit-button:hover {
+    background-color: #31b0d5;
+}
+
+.delete-button {
+    background-color: #d9534f;
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
+
+.action-buttons form {
+    margin: 0;
+}
+.view-events-button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.view-events-button:hover{
+    background-color: #286090;
+}
