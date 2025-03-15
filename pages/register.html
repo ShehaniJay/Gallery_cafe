@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Café</title>
+    <link rel="stylesheet" href="../page_header.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <script>
+        function validateForm() {
+            var name = document.getElementById('RegisterName').value.trim();
+            var email = document.getElementById('RegisterEmail').value.trim();
+            var phone = document.getElementById('registerPhoneNo').value.trim();
+            var username = document.getElementById('registerUsername').value.trim();
+            var password = document.getElementById('password').value.trim();
+            var role = document.getElementById('role').value;
+
+            if (name == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (!validateEmail(email)) {
+                alert("Invalid email format");
+                return false;
+            }
+            if (phone == "") {
+                alert("Phone number must be filled out");
+                return false;
+            }
+            if (username == "") {
+                alert("Username must be filled out");
+                return false;
+            }
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+            if (password.length < 5) {
+                alert("Password must be at least 5 characters long");
+                return false;
+            }
+            if (role == "") {
+                alert("Role must be selected");
+                return false;
+            }
+            return true;
+        }
+
+        function validateEmail(email) {
+            var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return re.test(email);
+        }
+    </script>
+</head>
+<body>
+<header class="fixed-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.php"><img src="../logo.png" alt="The Gallery Café Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="headmenu_item"><a href="../index.php">Home</a></li>
+                    <li class="headmenu_item"><a href="../php/menu.php">Menu</a></li>
+                    <li class="headmenu_item"><a href="../php/preorder.php">Pre-order</a></li>
+                    <li class="headmenu_item"><a href="../php/reservations.php">Reservations</a></li>
+                    <li class="headmenu_item"><a href="../php/events.php">Events</a></li>
+                    <li class="headmenu_item"><a href="../php/contact.php">Contact </a></li>
+                    <li><button class="login-button"><a href="logIn.html">Login</a></button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="auth" class="auth">
+        <div class="container">
+            <div class="headingTitle">
+            <h2 class="head-title"> Get registered to experience more oppotunities through The Gallery café.</h2>
+        </div>
+        <form id="registerForm" action="../php/register.php" method="post" onsubmit="return validateForm()">
+                <h3>Registration Form</h3><br>
+                <label for="Name">Name:</label>
+                <input type="text" id="RegisterName" name="name" required><br>
+                <label for="Email">Email:</label>
+                <input type="email" id="RegisterEmail" name="email" required><br>
+                <label for="Phone Number">Phone Number:</label>
+                <input type="tel" id="registerPhoneNo" name="phone" required><br>
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="username" required><br>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <label for="jobrole">Role:</label>
+                <select id="role" name="role">
+                    <option value="">Select a role</option>
+                    <option value="customer">Customer</option>
+                    <option value="admin">Admin</option>
+                    <option value="staff">Operational staff</option>
+                </select><br>
+                <button type="submit">Register</button>
+            </form>
+            <div class="text1">
+            <p>Already have an Account? <a href="logIn.html" id="login">Login</a></p>
+        </div>
+        </div>
+</body>
+</html>

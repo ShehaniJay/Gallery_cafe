@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Café</title>
+    <link rel="stylesheet" href="../page_header.css">
+    <link rel="stylesheet" href="../styles/logIn.css">
+    <script scr="../script.js"></script>
+    
+</head>
+<body>
+<header class="fixed-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.php"><img src="../logo.png" alt="The Gallery Café Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="headmenu_item"><a href="../index.php">Home</a></li>
+                    <li class="headmenu_item"><a href="../php/menu.php">Menu</a></li>
+                    <li class="headmenu_item"><a href="../php/preorder.php">Pre-order</a></li>
+                    <li class="headmenu_item"><a href="../php/reservations.php">Reservations</a></li>
+                    <li class="headmenu_item"><a href="../php/events.php">Events</a></li>
+                    <li class="headmenu_item"><a href="../php/contact.php">Contact </a></li>
+                    <li><button class="login-button"><a href="logIn.html">Login</a></button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<script>
+    window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const message = urlParams.get('message');
+            if (message) {
+                alert(decodeURIComponent(message));
+            }
+        };
+    function validateForm() {
+        var usernameOrEmail = document.getElementById('usernameOrEmail').value;
+        var password = document.getElementById('password').value;
+
+        // Validate username or email
+        if (usernameOrEmail.trim() === "") {
+            alert("Username or Email must be filled out");
+            return false;
+        }
+
+        // Validate password
+        if (password.trim() === "") {
+            alert("Password must be filled out");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+
+
+<form action="../php/login.php" method="post" onsubmit="return validateForm()">
+    <h2>Login </h2>
+    <label for="usernameOrEmail">Username/ Email:</label>
+    <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit">Login</button>
+</form>
+<div class="text_reg">
+<p>Don't have an account yet? <a href="register.html" id="register">Get Registered</a></p>
+</div>
+</body>
+</html>
